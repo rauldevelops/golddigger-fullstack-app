@@ -1,4 +1,4 @@
-const eventSource = new EventSource('/price/live')
+const eventSource = new EventSource('http://127.0.0.1:8000/price/live')
 
 const priceDisplay = document.getElementById('price-display')
 
@@ -10,12 +10,12 @@ investForm.addEventListener('submit', async (e) => {
   const formData = new FormData(investForm)
   const formDataObj = Object.fromEntries(formData.entries())
   try {
-    const response = await fetch('/api', {
+    const response = await fetch('http://127.0.0.1:8000/api', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json"
       },
-      body: formDataObj
+      body: JSON.stringify(formDataObj)
     })
     return response
   } catch(err) {

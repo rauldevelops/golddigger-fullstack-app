@@ -31,7 +31,7 @@ export async function handlePost(req, res) {
   try {
     const parsedBody = await parseJSONBody(req)
     await addNewData(parsedBody)
-    sendResponse(res, 201, 'application/json', 'no data')
+    sendResponse(res, 201, 'application/json', JSON.stringify(parsedBody))
   } catch(err) {
     sendResponse(res, 400, 'application/json', {error: err})
   }
