@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "date": "Mon Dec 22 2025 14:22:38 GMT-0500 (Eastern Standard Time)",
+    "currentgoldprice": "$3061.36",
+    "investmentamount": "$23456",
+    "totalgoldpurchased": "7.66 oz"
+  },
+  {
+    "date": "Mon Dec 22 2025 14:22:48 GMT-0500 (Eastern Standard Time)",
+    "currentgoldprice": "$2746.09",
+    "investmentamount": "$321654",
+    "totalgoldpurchased": "117.13 oz"
+  }
+]
