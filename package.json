@@ -1,0 +1,16 @@
+{
+  "name": "golddigger-app",
+  "version": "1.0.0",
+  "description": "a live gold price and purchasing app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Raul Crespo",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
